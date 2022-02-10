@@ -1,0 +1,627 @@
+/*
+Sviatoslav  Pechenevskyi
+09.23.2020  
+styles.css
+*/
+
+/* css reset   */
+body, header, nav, main, footer, article, aside,
+section, figure, figcaption,
+h1, h2, h3, h4, div, img, ul    {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(185, 217, 247, 0.6), rgba(113, 191, 236, 0.6)), 
+                    url("../images/monitor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: #ccc;
+    height:auto;
+    width: auto;
+    min-width: 200px;
+}
+
+.heading    {
+    text-align: center;
+    background-color: azure;
+    color: rgb(5, 34, 202);
+	box-sizing: border-box;
+    width: 74%;
+    margin-left: 13%;
+    margin-top:1%;
+    font-weight: bold;
+}
+
+/*      Style rules for mobile viewport     */
+
+/*      styles rules for header             */
+header{
+/*  sticky element                          */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    height: auto;
+    width: auto;
+    clear: both;
+    width: 11vw;
+}
+header figure { display: inline-block; }
+/*  figcaption element                      */
+#myLogo figcaption  {
+    height: auto;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: #f5f24d;
+}
+
+.myLogo img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+}
+
+/*  styles rules for nav   */
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+    clear: both;
+}
+
+/*  menu Style Rule for Mobile Viewports  */
+.menu {
+    list-style-type: none;
+    text-align: center;
+    clear: both;
+}
+
+/* remove the bullet marker within the nav element */
+.menu li {
+/*  menu li Style Rule for Mobile Viewports  */
+    font-size: 1.5em;
+/*  Custom Fonts      */
+    font-family: 'Francois One', sans-serif;
+    border-top: 1px solid #fff;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+/*  pseudo-class     */
+.menu li:first-child    {
+    border-top: none;
+}
+
+.menu a { 
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, san-serif;
+    color: #0909df;
+    clear: both;
+    padding: 0.5em 1em;
+    font-size: 100%;
+}
+
+/*  pseudo-class     */
+.menu a:hover, .menu a:active{
+    background-color: rgb(35, 127, 158);
+    color: black;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+    clear: both;
+}
+
+/* box-shadow   */
+.tel_link   {
+    background-color: #ad9292;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+    clear: both;
+}
+
+/*  #id Selector                */
+#hero img  {
+    
+/*  box-shadow                  */
+    box-shadow: 5px 10px #7fe5f7;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  styles rules for main content   */
+main    {
+    font-family: 'Roboto Slab', serif;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.15em;
+/*      Rounded Corners      */
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+.mission    {
+    text-align: center;
+    color: rgb(5, 34, 202);
+    font-weight: bold;
+    width: auto;
+    height: auto;
+    clear: both;
+}
+
+/*  figcaption element  */
+.mission figcaption  {
+    width: 18%;
+    font-weight: bold;
+    font-size: 73%;
+    vertical-align: middle;
+    text-align: left;
+    padding-top: 19%; 
+    background-color: rgb(206, 203, 240);
+}
+
+.mission img    {
+    display: block;
+/*  box-shadow  */
+    box-shadow: 5px 10px #69aee7;
+    width: 18%;
+    margin: 0 auto;
+    float: left;
+    text-decoration: none;
+}
+
+.essays {
+    text-align: left;
+    background-color: azure;
+    color: rgb(5, 34, 202);
+    clear: both;
+    padding-left: 7%;
+}
+
+/*  Pseudo-Element    */
+.essays li::first-line {
+    text-transform: uppercase;
+}
+
+/* Grid Layout            */
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+.grid>div {
+    padding: 10px;
+}
+
+/*  figure element */
+.elena, .irina  {
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+/*  box-shadow  */
+.elena img, .irina  img{
+    box-shadow: 5px 10px #888888;
+}
+
+/*  figcaption element  */
+.elena figcaption  {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.irina figcaption  {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: bold;
+}
+
+.elena img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: 5px 10px 8px #ccc;
+}
+
+.irina img{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    text-decoration: none;
+    text-shadow: 5px 10px 8px #ccc;
+}
+
+.about_me   {
+    text-align: left;
+    background-color: azure;
+    color: rgb(5, 34, 202);
+}
+
+.myHobby    {
+    text-align: left;
+    background-color: azure;
+    color: rgb(5, 34, 202);
+    clear: both;
+}
+
+/*   text shadow    */
+h3, h4  {
+    text-align: center;
+    text-shadow: 2px 2px #9999ec;
+    clear: both;
+}
+
+/*  Pseudo-Element     */
+.about_me p::first-line {
+    text-transform: uppercase;
+}
+
+.contactMe  {
+    text-align: left;
+    background-color: azure;
+    color: rgb(5, 34, 202);
+    text-decoration: none;
+    clear: both;
+}
+
+.map    {
+    width: auto;
+    height: auto;
+}
+
+/* Table in resume.html */
+/*  styles rules for footer   */
+footer  {
+    width: auto;
+    background-color: azure;
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+/*  Table about my work experience                  */
+#tabResume   {
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    height: auto;
+}
+
+td, tr {
+    border: 1px solid black;
+    padding: 2%;
+    width: auto;
+    height: auto;
+}
+
+tr:nth-child(odd)   {
+    background-color: #ccc;
+}
+
+th  {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+caption {
+    clear: both;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1%;
+    background-color: lightblue;
+    width: auto;
+    height: auto;
+}
+
+/*  media query         */
+
+/*  Device Breakpoints  */
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html {background: pink;}
+
+/*  style the table for a large desktop viewport                        */
+    #container  {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #tabResume  {
+        width: 80%;
+    }
+
+    /*  Style a Form for a Desktop Viewport */
+    form {
+        width: auto;
+    }
+
+    .form-grid  {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
+    .btn    {
+        grid-column: 1 / span 3;
+    }
+
+    /*  Add a Form to index.html for a Desktop Viewport  */
+    .form-grid {
+        margin-top: 2%;
+        background-color:#b3acac;
+        padding: 2%;
+    }
+    form h3 {
+        text-align: center;
+    } 
+
+/* style rules for forms elements   */
+    fieldset, input, select, textarea   {
+        margin-bottom: 2%;
+    }
+
+    fieldset legend {
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    label   {
+        display: block;
+        padding-top: 3%;
+    }
+
+    form #submit    {
+        margin: 0 auto;
+        border: none;
+        display: block;
+        padding: 2%;
+        background-color: #dbd140;
+        font-size: 1em;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+    html { background: orange; }
+
+/*  Style a Form for a Desktop Viewport */
+    form {
+        width: auto;
+    }
+
+    .form-grid  {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
+    .btn    {
+        grid-column: 1 / span 3;
+    }
+
+    /*  Add a Form to index.html for a Desktop Viewport  */
+    .form-grid {
+        margin-top: 2%;
+        background-color:#b3acac;
+        padding: 2%;
+    }
+    form h3 {
+        text-align: center;
+    } 
+
+/* style rules for forms elements   */
+    fieldset, input, select, textarea   {
+        margin-bottom: 2%;
+    }
+
+    fieldset legend {
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    label   {
+        display: block;
+        padding-top: 3%;
+    }
+
+    form #submit    {
+        margin: 0 auto;
+        border: none;
+        display: block;
+        padding: 2%;
+        background-color: #dbd140;
+        font-size: 1em;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 768px) {
+    html  {  background: blue;  } 
+
+    .menu a:hover, .menu a:active{
+        background-color: rgb(35, 127, 158);
+        color: black;
+    }
+
+    .tablet-desktop {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        clear: both;
+    }
+
+    /*  Table about my work experience                  */
+
+    #tabResume tr th { display: none; }
+    #tabResume tr td  { display: block; width: 68%; margin: 0 auto; }
+
+    #tabResume   {
+        background-color: lightblue;
+        border: 2px solid black;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    td, tr {
+        border: 1px solid black;
+        padding: 2%;
+        width: auto;
+        height: auto;
+    }
+
+    tr:nth-child(odd)   {
+        background-color: #ccc;
+    }
+
+    th  {
+        background-color: #000;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    caption {
+        clear: both;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 1%;
+        background-color: lightblue;
+        width: auto;
+        height: auto;
+    }
+
+    /*  Add a Form to index.html for a Mobile Viewport  */
+    .form-grid {
+        margin-top: 2%;
+        background-color:#b3acac;
+        padding: 2%;
+        clear: both;
+        display: block;
+        width: 70%;
+        margin: 0 auto;
+
+    }
+    form h3 {
+        text-align: center;
+    } 
+
+    /* style rules for forms elements   */
+    fieldset, input, select, textarea   {
+        margin-bottom: 2%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    fieldset legend {
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    label   {
+        display: block;
+        padding-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    form #submit    {
+        margin: 0 auto;
+        border: none;
+        display: block;
+        padding: 2%;
+        background-color: #dbd140;
+        font-size: 1em;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+}
+
+
+/* Extra small devices (phones, 600px and down)  */
+
+html  { min-width: 200px; } 
+
+@media only screen and (max-width: 600px) {
+    html  {  background: red;  } 
+
+/*  style the table for a mobile viewport                        */
+
+    #tabResume tr th { display: none; }
+    #tabResume tr td { display: block; }
+    #tabResume tr td:first-child { font-weight: bold; }
+    #tabResume tr td:last-child { margin-bottom: 25px; }
+
+/*  Add a Form to index.html for a Mobile Viewport  */
+    .form-grid {
+        margin-top: 2%;
+        background-color:#b3acac;
+        padding: 2%;
+        clear: both;
+        display: block;
+        width: 100%;
+    }
+    form h3 {
+        text-align: center;
+    } 
+
+/* style rules for forms elements   */
+    fieldset, input, select, textarea   {
+        margin-bottom: 2%;
+    }
+
+    fieldset legend {
+        font-weight: bold;
+        font-size: 1.25em;
+    }
+
+    label   {
+        display: block;
+        padding-top: 3%;
+    }
+
+    form #submit    {
+        margin: 0 auto;
+        border: none;
+        display: block;
+        padding: 2%;
+        background-color: #dbd140;
+        font-size: 1em;
+        border-radius: 10px;
+        font-weight: bold;
+    }
+}
